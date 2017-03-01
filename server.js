@@ -36,6 +36,7 @@ db.once("open", function() {
 
 
 // GET route - New York Times site
+
 app.get("/scrape", function(req, res) {
   
   request("https://www.nytimes.com/", function(error, response, html) {
@@ -71,7 +72,6 @@ app.get("/scrape", function(req, res) {
 
   res.redirect("/");
 
-  //res.send("Scrape Complete");
 });
 
 
